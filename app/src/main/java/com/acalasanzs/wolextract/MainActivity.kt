@@ -2,11 +2,17 @@ package com.acalasanzs.wolextract
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.NumberPicker
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val selector:NumberPicker = findViewById(R.id.selector)
+        selector.minValue = 0
+        selector.maxValue = 2
+        selector.displayedValues = arrayOf("Español","English","Català")
+
     }
 
     private fun draw() {
