@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         val selector:NumberPicker = findViewById(R.id.selector)
         selector.minValue = 0
         selector.maxValue = 2
-        selector.displayedValues = arrayOf("Español","English","Català")
+        selector.displayedValues = arrayOf<String>("Español","English","Català")
 
     }
 
