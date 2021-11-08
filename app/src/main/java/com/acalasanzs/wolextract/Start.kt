@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.NumberPicker
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.Navigation
 import com.acalasanzs.wolextract.databinding.FragmentStartBinding
@@ -18,7 +19,6 @@ class Start : Fragment() {
         val binding = DataBindingUtil.inflate<FragmentStartBinding>(inflater, R.layout.fragment_start, container, false)
         binding.button.setOnClickListener { view: View ->
             Navigation.findNavController(view).navigate(R.id.action_home2_to_home3)
-
         }
         return binding.root
     }

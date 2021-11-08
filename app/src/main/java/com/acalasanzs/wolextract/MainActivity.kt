@@ -2,21 +2,20 @@ package com.acalasanzs.wolextract
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.ContactsContract
 import android.view.View
 import android.widget.NumberPicker
 import androidx.databinding.DataBindingUtil
 import com.acalasanzs.wolextract.databinding.ActivityMainBinding
+import com.acalasanzs.wolextract.databinding.FragmentStartBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
+    private lateinit var startBinding: FragmentStartBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_main)
         binding = DataBindingUtil.setContentView(this,R.layout.activity_main)
-        /*val selector:NumberPicker = findViewById(R.id.selector)
-        selector.minValue = 0
-        selector.maxValue = 2
-        selector.displayedValues = arrayOf<String>("Español","English","Català")*/
 
     }
 
