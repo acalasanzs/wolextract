@@ -19,8 +19,6 @@ class MainActivity : AppCompatActivity() {
         selector.displayedValues = arrayOf<String>("Español","English","Català")*/
 
     }
-    private fun addNickname(view : View) {
-    }
 
     private fun draw() {
         val languages: Map<String, wolLang> = mapOf(
