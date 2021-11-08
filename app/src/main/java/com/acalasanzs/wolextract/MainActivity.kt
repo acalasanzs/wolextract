@@ -2,17 +2,24 @@ package com.acalasanzs.wolextract
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.NumberPicker
+import androidx.databinding.DataBindingUtil
+import com.acalasanzs.wolextract.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        //setContentView(R.layout.activity_main)
+        binding = DataBindingUtil.setContentView(this,R.layout.activity_main)
         val selector:NumberPicker = findViewById(R.id.selector)
         selector.minValue = 0
         selector.maxValue = 2
         selector.displayedValues = arrayOf<String>("Español","English","Català")
 
+    }
+    private fun addNickname(view : View) {
     }
 
     private fun draw() {
