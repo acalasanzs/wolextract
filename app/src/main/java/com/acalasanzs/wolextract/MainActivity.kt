@@ -13,10 +13,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_main)
         binding = DataBindingUtil.setContentView(this,R.layout.activity_main)
-        val selector:NumberPicker = findViewById(R.id.selector)
+        /*val selector:NumberPicker = findViewById(R.id.selector)
         selector.minValue = 0
         selector.maxValue = 2
-        selector.displayedValues = arrayOf<String>("Español","English","Català")
+        selector.displayedValues = arrayOf<String>("Español","English","Català")*/
 
     }
     private fun addNickname(view : View) {
