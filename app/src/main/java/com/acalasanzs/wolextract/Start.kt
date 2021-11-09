@@ -10,8 +10,9 @@ import androidx.databinding.DataBindingUtil
 import androidx.navigation.Navigation
 import com.acalasanzs.wolextract.databinding.FragmentStartBinding
 
-class Start : Fragment() {
 
+class Start : Fragment() {
+    private lateinit var startBinding: FragmentStartBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -21,5 +22,12 @@ class Start : Fragment() {
             Navigation.findNavController(view).navigate(R.id.action_home2_to_home3)
         }
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        var selector: NumberPicker = requireView().findViewById(R.id.selector)
+        selector.minValue = 0
+        selector.maxValue = 2
+        selector.displayedValues = arrayOf("English","Español","Català")
     }
 }

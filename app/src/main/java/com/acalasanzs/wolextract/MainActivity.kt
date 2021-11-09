@@ -7,16 +7,13 @@ import android.view.View
 import android.widget.NumberPicker
 import androidx.databinding.DataBindingUtil
 import com.acalasanzs.wolextract.databinding.ActivityMainBinding
-import com.acalasanzs.wolextract.databinding.FragmentStartBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-    private lateinit var startBinding: FragmentStartBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_main)
         binding = DataBindingUtil.setContentView(this,R.layout.activity_main)
-
     }
 
     private fun draw() {

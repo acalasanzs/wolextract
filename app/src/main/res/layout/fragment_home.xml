@@ -1,14 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Home">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
-</FrameLayout>
+        <android.widget.Button
+            android:id="@+id/button2"
+            android:layout_width="176dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/search_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.widget.Button
+            android:id="@+id/button4"
+            android:layout_width="176dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="176dp"
+            android:background="@drawable/trivia_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.widget.Button
+            android:id="@+id/button3"
+            android:layout_width="176dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/random_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/random_button"
+            android:fontFamily="sans-serif"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:padding="0dp"
+            android:textAllCaps="false"/>
+
+        <NumberPicker
+            android:id="@+id/chapter"
+            android:layout_width="84dp"
+            android:layout_height="180dp"
+            android:descendantFocusability="blocksDescendants"
+            android:theme="@style/Selector"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.611"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.807" />
+
+        <NumberPicker
+            android:id="@+id/book"
+            android:layout_width="164dp"
+            android:layout_height="180dp"
+            android:descendantFocusability="blocksDescendants"
+            android:theme="@style/Selector"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.149"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.807" />
+
+        <NumberPicker
+            android:id="@+id/verse"
+            android:layout_width="84dp"
+            android:layout_height="180dp"
+            android:descendantFocusability="blocksDescendants"
+            android:theme="@style/Selector"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.868"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.807" />
+
+        <android.widget.Button
+            android:id="@+id/button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="168dp"
+            android:layout_marginBottom="36dp"
+            android:background="@drawable/next_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

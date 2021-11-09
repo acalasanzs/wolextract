@@ -13,11 +13,11 @@
         <action
             android:id="@+id/action_home2_to_home3"
             app:destination="@id/home3"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
+            app:enterAnim="@anim/zoom_in"
             app:launchSingleTop="false"
             app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
+            app:popExitAnim="@anim/slide_out_right"
+             />
     </fragment>
     <fragment
         android:id="@+id/home3"
