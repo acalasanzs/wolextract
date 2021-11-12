@@ -1,14 +1,24 @@
 package com.acalasanzs.wolextract
 
+import android.animation.ValueAnimator
+import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.AccelerateInterpolator
+import android.view.animation.LinearInterpolator
+import android.widget.ImageView
 import android.widget.NumberPicker
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.Navigation
 import com.acalasanzs.wolextract.databinding.FragmentStartBinding
+import android.view.animation.AnimationUtils
+import android.widget.TextView
+import androidx.core.animation.doOnEnd
+import kotlinx.android.synthetic.main.activity_main.*
 
 
 class Start : Fragment() {
@@ -27,10 +37,42 @@ class Start : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         var selector: NumberPicker = requireView().findViewById(R.id.selector)
+        val banner: ImageView = requireView().findViewById(R.id.imageView3)
+        val cLayout: ConstraintLayout = requireView().findViewById(R.id.main_start)
+        val text: TextView = requireView().findViewById(R.id.textView)
+
+        val valueAnimator = ValueAnimator.ofFloat(-180f,0f)
+        valueAnimator.addUpdateListener {
+            val value = it.animatedValue as Float
+            banner.translationY = value
+        }
+        val valueAnimatorBg = ValueAnimator.ofInt(Color.parseColor("#e6f7f6")-50,Color.parseColor("#e6f7f6"))
+        valueAnimatorBg.addUpdateListener {
+            val value = it.animatedValue as Int
+            cLayout.setBackgroundColor(value)
+        }
+        valueAnimator.interpolator = AccelerateInterpolator(1.5f)
+        valueAnimator.duration = 700
+        valueAnimatorBg.interpolator = LinearInterpolator()
+        valueAnimatorBg.duration = 700
         selector.minValue = 0
         selector.value = 1
         selector.maxValue = 2
         selector.displayedValues = langArr
+        valueAnimator.start()
+        valueAnimatorBg.start()
+        selector.alpha = 0f
+        text.alpha = 0f
+        valueAnimator.doOnEnd {
+            val fadeAnimation = AnimationUtils.loadAnimation(activity,R.anim.fade_in)
+            selector.startAnimation(fadeAnimation)
+            text.startAnimation(fadeAnimation)
+            selector.alpha = 1f
+            text.alpha = 1f
+        }
+
+
+
     }
     private fun set(language: String): wolLang {
         val languages: Map<String, wolLang> = mapOf(

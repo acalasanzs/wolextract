@@ -7,7 +7,7 @@
         android:orientation="vertical">
 
         <android.widget.Button
-            android:id="@+id/button2"
+            android:id="@+id/search"
             android:layout_width="166dp"
             android:layout_height="140dp"
             android:layout_marginTop="16dp"
@@ -17,14 +17,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
         <android.widget.Button
-            android:id="@+id/button3"
+            android:id="@+id/rand"
             android:layout_width="166dp"
             android:layout_height="140dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:background="@drawable/random_button"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintStart_toEndOf="@id/button2"
+            app:layout_constraintStart_toEndOf="@id/search"
             app:layout_constraintTop_toTopOf="parent"
             android:text="@string/random_button"
             android:fontFamily="sans-serif"
@@ -34,7 +34,7 @@
             android:textAllCaps="false"/>
 
         <android.widget.Button
-            android:id="@+id/button4"
+            android:id="@+id/trivia"
             android:layout_width="166dp"
             android:layout_height="140dp"
             android:layout_marginStart="8dp"

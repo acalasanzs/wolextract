@@ -13,15 +13,28 @@
         <action
             android:id="@+id/action_home2_to_home3"
             app:destination="@id/home3"
-            app:enterAnim="@anim/zoom_in"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
             app:launchSingleTop="false"
             app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right"
-             />
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/home3"
         android:name="com.acalasanzs.wolextract.Home"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home3_to_triviaFragment"
+            app:destination="@id/triviaFragment"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_down" />
+    </fragment>
+    <fragment
+        android:id="@+id/triviaFragment"
+        android:name="com.acalasanzs.wolextract.TriviaFragment"
+        android:label="fragment_triva"
+        tools:layout="@layout/fragment_triva" />
 </navigation>
