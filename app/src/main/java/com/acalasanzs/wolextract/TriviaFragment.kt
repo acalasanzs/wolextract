@@ -9,15 +9,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AccelerateInterpolator
 import android.view.animation.AnimationUtils
-import android.view.animation.LinearInterpolator
+import android.widget.EditText
 import android.widget.ImageView
-import android.widget.NumberPicker
 import android.widget.TextView
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.animation.doOnEnd
 
 class TriviaFragment : Fragment() {
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -28,6 +25,8 @@ class TriviaFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val valueAnimator = ValueAnimator.ofFloat(1f,0.65f)
         val banner: ImageView = requireView().findViewById(R.id.banner)
+        val editText: EditText = requireView().findViewById(R.id.editText)
+        val text: TextView = requireView().findViewById(R.id.textView2)
         valueAnimator.addUpdateListener {
             val value = it.animatedValue as Float
             banner.scaleX = value
@@ -37,6 +36,15 @@ class TriviaFragment : Fragment() {
         valueAnimator.interpolator = AccelerateInterpolator(1.5f)
         valueAnimator.duration = 700
         valueAnimator.start()
+        editText.alpha = 0f
+        text.alpha = 0f
+        valueAnimator.doOnEnd {
+            val fadeAnimation = AnimationUtils.loadAnimation(activity,R.anim.fade_in)
+            editText.startAnimation(fadeAnimation)
+            text.startAnimation(fadeAnimation)
+            editText.alpha = 1f
+            text.alpha = 1f
+        }
 
 
 
