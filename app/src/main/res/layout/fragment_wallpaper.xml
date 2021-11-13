@@ -3,21 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/fullscreenBackgroundColor"
+    android:background="@color/purple_500"
     android:theme="@style/ThemeOverlay.WOLExtract.FullscreenContainer"
     tools:context=".Wallpaper">
-
-    <!-- The primary full-screen view. This can be replaced with whatever view
-         is needed to present your content, e.g. VideoView, SurfaceView,
-         TextureView, etc. -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:src="@drawable/wallpaper_background"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"/>
     <TextView
         android:id="@+id/fullscreen_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
         android:keepScreenOn="true"
-        android:text="@string/dummy_content"
-        android:textColor="?attr/fullscreenTextColor"
+        android:text="@string/app_name"
         android:textSize="50sp"
         android:textStyle="bold" />
 
@@ -43,6 +44,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textColor="@color/white"
                 android:text="@string/dummy_button" />
 
         </LinearLayout>
