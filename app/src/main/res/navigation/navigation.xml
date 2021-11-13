@@ -31,10 +31,22 @@
             app:exitAnim="@anim/fade_out"
             app:popEnterAnim="@anim/fade_in"
             app:popExitAnim="@anim/slide_down" />
+        <action
+            android:id="@+id/action_home3_to_wallpaper2"
+            app:destination="@id/wallpaper2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/triviaFragment"
         android:name="com.acalasanzs.wolextract.TriviaFragment"
         android:label="fragment_triva"
         tools:layout="@layout/fragment_triva" />
+    <fragment
+        android:id="@+id/wallpaper2"
+        android:name="com.acalasanzs.wolextract.Wallpaper"
+        android:label="fragment_wallpaper"
+        tools:layout="@layout/fragment_wallpaper" />
 </navigation>

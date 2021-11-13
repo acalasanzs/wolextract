@@ -5,4 +5,6 @@
     <string name="random_button">      RAND</string>
     <string name="start">Select your Language:</string>
     <string name="trivia_tag">Enter your tagname:</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
