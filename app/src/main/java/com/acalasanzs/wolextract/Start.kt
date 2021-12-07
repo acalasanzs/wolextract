@@ -49,7 +49,6 @@ class Start : Fragment() {
         val valueAnimatorBg = ValueAnimator.ofInt(Color.parseColor("#e6f7f6")-50,Color.parseColor("#e6f7f6"))
         valueAnimatorBg.addUpdateListener {
             val value = it.animatedValue as Int
-            cLayout.setBackgroundColor(value)
         }
         valueAnimator.interpolator = AccelerateInterpolator(1.5f)
         valueAnimator.duration = 700

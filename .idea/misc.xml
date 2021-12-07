@@ -13,14 +13,19 @@
         <entry key="..\:/Users/acses/AndroidStudioProjects/wolextract/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/acses/AndroidStudioProjects/wolextract/app/src/main/res/drawable/ic_next.xml" value="0.15833333333333333" />
         <entry key="..\:/Users/acses/AndroidStudioProjects/wolextract/app/src/main/res/drawable/ic_trivia.xml" value="0.1" />
+        <entry key="..\:/Users/acses/AndroidStudioProjects/wolextract/app/src/main/res/drawable/ic_wallpaper.xml" value="0.23148148148148148" />
         <entry key="..\:/Users/acses/AndroidStudioProjects/wolextract/app/src/main/res/drawable/next_button.xml" value="0.15833333333333333" />
         <entry key="..\:/Users/acses/AndroidStudioProjects/wolextract/app/src/main/res/drawable/random_button.xml" value="0.19444444444444445" />
         <entry key="..\:/Users/acses/AndroidStudioProjects/wolextract/app/src/main/res/drawable/search_button.xml" value="0.1" />
-        <entry key="..\:/Users/acses/AndroidStudioProjects/wolextract/app/src/main/res/drawable/trivia_button.xml" value="0.1" />
+        <entry key="..\:/Users/acses/AndroidStudioProjects/wolextract/app/src/main/res/drawable/trivia_button.xml" value="0.18" />
         <entry key="..\:/Users/acses/AndroidStudioProjects/wolextract/app/src/main/res/drawable/wallpaper_button.xml" value="0.3490740740740741" />
         <entry key="..\:/Users/acses/AndroidStudioProjects/wolextract/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/acses/AndroidStudioProjects/wolextract/app/src/main/res/layout/fragment_home.xml" value="0.33" />
-        <entry key="..\:/Users/acses/AndroidStudioProjects/wolextract/app/src/main/res/layout/fragment_start.xml" value="0.18" />
+        <entry key="..\:/Users/acses/AndroidStudioProjects/wolextract/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Users/acses/AndroidStudioProjects/wolextract/app/src/main/res/layout/fragment_item_list_dialog_list_dialog.xml" value="0.1" />
+        <entry key="..\:/Users/acses/AndroidStudioProjects/wolextract/app/src/main/res/layout/fragment_item_list_dialog_list_dialog_item.xml" value="0.33" />
+        <entry key="..\:/Users/acses/AndroidStudioProjects/wolextract/app/src/main/res/layout/fragment_rand.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/acses/AndroidStudioProjects/wolextract/app/src/main/res/layout/fragment_search.xml" value="0.67" />
+        <entry key="..\:/Users/acses/AndroidStudioProjects/wolextract/app/src/main/res/layout/fragment_start.xml" value="0.25" />
         <entry key="..\:/Users/acses/AndroidStudioProjects/wolextract/app/src/main/res/layout/fragment_triva.xml" value="0.17962962962962964" />
         <entry key="..\:/Users/acses/AndroidStudioProjects/wolextract/app/src/main/res/layout/fragment_wallpaper.xml" value="0.25" />
         <entry key="..\:/Users/acses/AndroidStudioProjects/wolextract/app/src/main/res/mipmap-anydpi-v26/ic_banner.xml" value="0.1" />

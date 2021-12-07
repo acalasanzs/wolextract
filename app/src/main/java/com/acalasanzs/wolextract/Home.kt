@@ -29,6 +29,12 @@ class Home : Fragment() {
         binding.wallpaper.setOnClickListener { view: View ->
             Navigation.findNavController(view).navigate(R.id.action_home3_to_wallpaper2)
         }
+        binding.search.setOnClickListener { view: View ->
+            Navigation.findNavController(view).navigate(R.id.action_home3_to_search2)
+        }
+        binding.rand.setOnClickListener { view: View ->
+            Navigation.findNavController(view).navigate(R.id.action_home3_to_rand2)
+        }
         return binding.root
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

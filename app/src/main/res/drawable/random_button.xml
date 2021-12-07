@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item>
+    <item android:width="166dp" android:height="140dp">
         <shape android:shape="rectangle">
-            <gradient android:startColor="#01a3a4" android:endColor="#ff9ff3"/>
+            <gradient android:startColor="#802c3e50" android:endColor="#805f27cd"/>
+            <corners android:radius="25dp" />
+        </shape>
+    </item>
+    <item android:width="166dp" android:height="140dp" android:top="25px" android:left="25px">
+        <shape android:shape="rectangle">
+            <gradient android:startColor="#2c3e50" android:endColor="#5f27cd"/>
             <corners android:radius="25dp"/>
 
         </shape>
     </item>
-<item>
-    <inset android:drawable="@drawable/ic_launcher_foreground"
-        android:insetRight="110dp"
-        android:insetTop="50dp"
-        android:insetLeft="20dp"
-        android:insetBottom="50dp" />
-</item>
+    <item android:width="166dp" android:height="130dp" android:top="20dp" android:left="20dp">
+        <inset android:drawable="@drawable/ic_launcher_foreground"
+            android:insetRight="40dp"
+            android:insetTop="20dp"
+            android:insetLeft="20dp"
+            android:insetBottom="20dp" />
+    </item>
 </layer-list>

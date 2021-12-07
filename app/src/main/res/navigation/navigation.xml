@@ -38,6 +38,20 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_home3_to_search2"
+            app:destination="@id/search2"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_down"/>
+        <action
+            android:id="@+id/action_home3_to_rand2"
+            app:destination="@id/rand2"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_down" />
     </fragment>
     <fragment
         android:id="@+id/triviaFragment"
@@ -49,4 +63,14 @@
         android:name="com.acalasanzs.wolextract.Wallpaper"
         android:label="fragment_wallpaper"
         tools:layout="@layout/fragment_wallpaper" />
+    <fragment
+        android:id="@+id/search2"
+        android:name="com.acalasanzs.wolextract.Search"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/rand2"
+        android:name="com.acalasanzs.wolextract.Rand"
+        android:label="fragment_rand_list"
+        tools:layout="@layout/fragment_rand_list" />
 </navigation>
